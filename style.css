@@ -1,0 +1,266 @@
+:root {
+  --white: #ffffff;
+  --black-oak: #4e4e4e;
+  --beluga: #f1f1f1;
+  --nato-blue: #152d41;
+  --china-pattern: #405d78;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--black-oak);
+}
+
+.nav-bar-text {
+  display: flex;
+  margin: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+/* FIRST SECTION */
+
+.container {
+  width: 441px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+}
+.container {
+  width: 760px;
+}
+
+.first-section {
+  /* background-size: cover; */
+  display: flex;
+  position: relative;
+  height: 574px;
+  background: center / cover no-repeat url(/Tło\ sekcji.png);
+  color: var(--white);
+}
+
+.background-shade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  z-index: 2;
+  height: 47px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  color: var(--white);
+}
+
+.first-section-text {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  max-width: 577px;
+  max-height: 230px;
+  margin-top: 100px;
+  margin-left: 14px;
+  color: var(--white);
+}
+
+.first-section-paragraph {
+  z-index: 2;
+  margin-top: 62.19px;
+  margin-bottom: 42.8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 164px;
+  height: 40.744px;
+  padding: 10px 0;
+  transition: background-color 1s ease;
+  background: rgba(196, 196, 196, 0);
+  background-color: transparent;
+  border: 3px solid var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: #000000;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 441px;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 769px) {
+}
+.second-section {
+  scale: 1.1;
+  width: 760px;
+  margin: 40px auto;
+}
+
+.second-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  height: 1005px;
+}
+
+.second-header {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  color: var(--nato-blue);
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+  text-align: start;
+}
+
+.personal-photo {
+  display: flex;
+  width: 157px;
+  height: 157px;
+  margin: 25px auto;
+  background-image: url(./zdjecie\ pracownika.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.second-paragraph {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+/* THIRD SECTION */
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  overflow: hidden;
+  margin: auto;
+  background-color: var(--china-pattern);
+}
+
+.third-section-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  gap: 36px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 769px) {
+}
+.third-section-container {
+  flex-direction: row;
+}
+
+.third-header {
+  margin: 76px auto;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+
+.usluga {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 338px;
+  height: 331px;
+  transition: transform 0.5s ease;
+  background-color: var(--beluga);
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 37.654px;
+  height: 37.654px;
+  background: #e07a64;
+  border-radius: 37.654px;
+}
+
+.usluga:hover {
+  transform: scale(1.05);
+}
+
+.under-text {
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 147px;
+  background-color: var(--black-oak);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.footer-pargarph {
+  display: flex;
+  gap: 10px;
+  font-size: 31px;
+}
