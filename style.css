@@ -86,7 +86,7 @@ a {
 .first-section {
   display: flex;
   position: relative;
-  height: 574px;
+  height: 100vh;
   margin: 0px auto;
   background: url(/header-background-image.png);
   background-repeat: no-repeat;
