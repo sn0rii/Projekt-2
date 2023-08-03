@@ -12,6 +12,10 @@
 
 /* MAIN */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -146,11 +150,6 @@ a {
   color: var(--white);
 }
 
-.btn:hover {
-  background-color: var(--white);
-  color: var(--black);
-}
-
 /* SECOND SECTION */
 
 .about-section {
@@ -231,8 +230,9 @@ a {
 .service {
   display: flex;
   position: relative;
-  width: 339px;
-  height: 331px;
+  width: 250px;
+  height: 250px;
+
   transition: transform 0.5s ease;
   background-color: var(--beluga);
   border: 1px solid black;
@@ -251,10 +251,6 @@ a {
   height: 22px;
   background: var(--rich-georgia-clay);
   border-radius: 50%;
-}
-
-.service:hover {
-  transform: scale(1.05);
 }
 
 .under-text {
@@ -291,11 +287,25 @@ a {
     width: 760px;
   }
 
-/* ABOUT SECTION MEDIUM */
-  
+  /* FIRST SECTION MEDIUM */
+
+  .first-section-text {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  /* ABOUT SECTION MEDIUM */
+
   .description {
     justify-content: flex-end;
     gap: 0;
+    margin-bottom: 40px;
   }
 
   .personal-photo {
@@ -311,6 +321,16 @@ a {
   .description:nth-child(even) {
     flex-direction: row-reverse;
     text-align: start;
+  }
+
+  /* OFFER SECTION MEDIUM */
+
+  .service:hover {
+    transform: scale(1.05);
+  }
+
+  .offer-section-container {
+    width: 760px;
   }
 
   /* FOOTER MEDIUM */
@@ -337,6 +357,18 @@ a {
 
   /* FIRST SECTION DESKTOP  */
 
+  .first-section-text {
+    display: flex;
+    max-width: 577px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
   /* ABOUT SECTION DESKTOP */
 
   .about-section {
@@ -347,8 +379,11 @@ a {
     text-align: start;
   }
   .description {
+    display: flex;
     justify-content: flex-end;
     gap: 50px;
+    max-height: 200px;
+    margin-bottom: 50px;
   }
 
   .description:nth-child(odd) {
@@ -379,12 +414,17 @@ a {
   }
 
   .offer-header {
+    width: 960px;
     text-align: start;
   }
 
   .service {
     width: 198px;
     height: 194px;
+  }
+
+  .service:hover {
+    transform: scale(1.05);
   }
   /* FOOTER DESKTOP */
 
