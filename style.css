@@ -110,11 +110,11 @@ a {
 
 .first-section-text {
   display: flex;
+  height: 100%;
   max-width: 577px;
-/*   max-height: 230px;
-  margin-top: 140px; */
   margin-left: 10px;
   justify-content: center;
+  
 }
 
 .first-section-paragraph {
@@ -127,7 +127,6 @@ a {
 
 .header {
   z-index: 2;
-  height: 46px;
   margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
@@ -140,7 +139,6 @@ a {
   z-index: 2;
   width: 164px;
   height: 40px;
-/*   padding: 10px 0; */
   transition: background-color 1s ease;
   background: var(--explosive-grey);
   background-color: transparent;
@@ -231,8 +229,8 @@ a {
 .service {
   display: flex;
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
 
   transition: transform 0.5s ease;
   background-color: var(--beluga);
