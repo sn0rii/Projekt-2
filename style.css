@@ -111,9 +111,10 @@ a {
 .first-section-text {
   display: flex;
   max-width: 577px;
-  max-height: 230px;
-  margin-top: 140px;
+/*   max-height: 230px;
+  margin-top: 140px; */
   margin-left: 10px;
+  justify-content: center;
 }
 
 .first-section-paragraph {
@@ -139,7 +140,7 @@ a {
   z-index: 2;
   width: 164px;
   height: 40px;
-  padding: 10px 0;
+/*   padding: 10px 0; */
   transition: background-color 1s ease;
   background: var(--explosive-grey);
   background-color: transparent;
@@ -311,6 +312,7 @@ a {
   .personal-photo {
     width: 150px;
     height: 150px;
+    flex-shrink: 0;
   }
 
   .description:nth-child(odd) {
