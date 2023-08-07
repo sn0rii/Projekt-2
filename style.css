@@ -376,6 +376,7 @@ a {
 
   .about-header {
     text-align: start;
+    margin-top: 50px;
   }
   .description {
     display: flex;
